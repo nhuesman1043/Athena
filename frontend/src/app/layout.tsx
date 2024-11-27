@@ -25,7 +25,7 @@ import "@mantine/core/styles.css"
 // METADATA
 // ========================================
 
-export const metadata = { title: "Athena", description: "Code standards" }
+export const metadata = { title: "Athena", description: "Coding Standards and Documentation" }
 
 // ========================================
 // ROOT

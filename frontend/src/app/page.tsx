@@ -18,7 +18,7 @@ import Main from "@/components/main/"
 // ========================
 // React
 // ========================
-
+import { useState } from "react"
 
 // ========================
 // Mantine
@@ -44,6 +44,9 @@ export default function Home() {
   // ========================
   // Navabr toggle
   const [opened, { toggle }] = useDisclosure()
+
+  // Track the active link by href - Purpose of standards is the default
+  const [activeLink, setActiveLink] = useState<string>("#purpose-of-standards")
 
   // ========================
   // Render
@@ -81,18 +84,14 @@ export default function Home() {
 
         {/* Navbar */}
         <AppShell.Navbar>
-          <AppShell.Section 
-            grow 
-            p="md"
-            component={ScrollArea}
-          >
-            <Navbar />
+          <AppShell.Section grow component={ScrollArea}>
+            <Navbar activeLink={activeLink} setActiveLink={setActiveLink} />
           </AppShell.Section>
         </AppShell.Navbar> 
 
         {/* Main */}
         <AppShell.Main>
-          <Main />
+          <Main activeLink={activeLink} />
         </AppShell.Main>
       </AppShell>
     </main>
