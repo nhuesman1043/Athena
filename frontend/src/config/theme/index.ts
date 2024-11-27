@@ -33,7 +33,7 @@ const themeOverride = createTheme({
 
     // Colors
     colors: {
-        "accent-primary": generateColors("#225560"),
+        "accent-primary": generateColors("#7389AE"),
     },
 })
 

@@ -40,7 +40,7 @@ import {
 // Tabler Icons
 // ========================
 import { 
-  IconPlaceholder,
+  IconShieldCheck,
   IconBrandGithub,
   IconSun,
   IconMoon,
@@ -84,11 +84,11 @@ export default function Header() {
           {/* Left section */}
           <Group>
             {/* Project icon */}
-            <IconPlaceholder size={45} color={theme.colors["accent-primary"][6]} />
+            <IconShieldCheck size={45} color={theme.colors["accent-primary"][6]} />
 
             {/* Project title */}
             <Title order={2}>
-              project title here
+              Athena
             </Title>
 
             {/* Project description */}
@@ -96,8 +96,9 @@ export default function Header() {
               size="lg"
               className="hidden sm:block"
               fs="italic"
+              c="accent-primary"
             >
-              project description here
+              Coding Standards and Documentation
             </Text>
           </Group>
 
@@ -111,11 +112,11 @@ export default function Header() {
                 arrowSize={8}
                 transitionProps={{ transition: "fade", duration: 300 }}
               >
-                <ActionIcon 
+                <ActionIcon
                   component="a"
                   size="xl" 
                   variant="outline"
-                  href=""
+                  href="https://github.com/nhuesman1043/Athena"
                   target="_blank"
                 >
                   <IconBrandGithub 
